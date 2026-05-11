@@ -257,7 +257,7 @@ This is called **Label Encoding** — converting text to numbers so the ML model
                 if r2 >= 0.80:
                     st.success(f"🎉 Excellent! R² = {r2} — model explains {r2*100:.1f}% of price variation.")
                 elif r2 >= 0.65:
-                    st.warning(f"👍 Good. R² = {r2} — try Random Forest or Gradient Boosting for better results.")
+                    st.warning(f"👍 Good. R² = {r2} ")
                 else:
                     st.error(f"⚠️ R² = {r2} — model is struggling. Try a different algorithm from the sidebar.")
 
